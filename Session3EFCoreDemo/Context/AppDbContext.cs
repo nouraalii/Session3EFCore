@@ -19,6 +19,7 @@ namespace Session3EFCoreDemo.Context
             modelBuilder.Entity<DepartmentManager>().ToView("DepartmentManagersView").HasNoKey();
 
             base.OnModelCreating(modelBuilder);
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
